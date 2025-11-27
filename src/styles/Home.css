@@ -1,0 +1,229 @@
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+}
+.hero{
+    position: relative;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/land.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .4);
+}
+.hero-cover{
+    height: 80%;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-top{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -40%);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.text{
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1;
+  color: white;
+  text-align: center;
+}
+.text h1{
+    font-size: 3.5rem;
+}
+.text .mb-8{
+    text-align: center;
+}
+.heading-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.b-link{
+    text-decoration: none;
+    color: black;
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 50px;
+    transition: all ease .3s;
+}
+.b-link:hover{
+    padding: 17px 34px;
+    transition: all ease .3s;
+}
+.why{
+    width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.reasons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reasons .cards{
+    width: 500px;
+}
+
+.reasons .image img{
+    max-width: 450px;
+    margin-left: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.reasons .image p{
+    margin-left: 20px;
+    font-size: .5rem;
+}
+.reasons .image p a{
+    text-decoration: none;
+    color: black;
+}
+.totop{
+    position: sticky;
+    top: 90vh;
+    left: 92.5vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0);
+}
+.my-socials{
+    position: sticky;
+    z-index: 999;
+    top: 50vh;
+    transform: translate(0, -50%);
+}
+.totop a img{
+    width: 50px;
+    height: 50px;
+}
+.best{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(228, 228, 228);
+}
+.best>h1{
+    margin-top: 10px;
+}
+.best>hr{
+    width: 60%;
+    height: 5px;
+    background-color: var(--brown);
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.best>hr:nth-child(3){
+    width: 40%;
+}
+.best>hr:nth-child(4){
+    width: 20%;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: black; */
+    margin-top: 100px;
+    padding: 0 30px;
+}
+.view-more{
+    height: 350px;
+    background-color: rgb(243, 221, 182);
+    width: 20%;
+    margin: 5px;
+    padding: 0;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plus{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.plus:hover{
+    width: 110px;
+    height: 110px;
+    transition: all .2s ease-in-out;
+}
+
+
+.cta {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 10px 0;
+    background: white;
+    padding: 60px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    /* background: rgb(0,51,102); */
+    background: linear-gradient(159deg, rgb(202, 91, 0) 0%, rgb(255, 226, 146) 100%);
+    text-align: center;
+    /* max-width: 600px; */
+    width: 80vw;
+}
+
+.cta>h1 {
+    color: white;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cta>p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color:white;
+    color: #3498db;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+    color: white;
+}

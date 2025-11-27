@@ -1,0 +1,26 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+}
+.other{
+    align-self: flex-start;
+}
+.mine{
+    align-self: flex-end;
+}
+#send{
+    position: sticky;
+    top: 80vh;
+    margin-left: 10px;
+}
+.message-input{
+    width: 500px;
+    height: 50px;
+}
+#send>button{
+    padding: 5px;
+    background-color: blue;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+}

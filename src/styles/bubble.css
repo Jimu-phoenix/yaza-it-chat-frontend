@@ -1,0 +1,23 @@
+.bubble{
+    max-width: 30vw;
+    padding: 3px;
+    margin: 5px 2px;
+}
+.other{
+    background-color: grey;
+}
+.other>p:first-child{
+    color: purple;
+}
+.other>p:nth-child(2){
+    color: white;
+}
+.mine{
+    background-color: blue;
+}
+.mine>p:first-child{
+    color: black;
+}
+.mine>p:nth-child(2){
+    color: white;
+}
