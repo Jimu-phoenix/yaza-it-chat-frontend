@@ -1,9 +1,10 @@
-import '../styles/bubble.css'
-export default function Chat(props){
-    return(
-       <div className="bubble other">
-        <p>{props.username ? props.username : "OtherUser"}</p>
-        <p>{props.text ? props.text : "This is others testing Text"}</p>
-       </div>
-    )
+export default function OtherBubble({ text, username }) {
+    return (
+        <div className="message-bubble other-bubble">
+            <div className="bubble-content">
+                <span className="bubble-username">{username}</span>
+                <div className="bubble-text">{text}</div>
+            </div>
+        </div>
+    );
 }
