@@ -8,7 +8,7 @@ export default function Log(){
 
     const postLog = async (fname, pword) => {
     try {
-        const response = await fetch('http://localhost:12343/login', {
+        const response = await fetch('https://chat-backend-nine-zeta.vercel.app/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'  

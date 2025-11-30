@@ -25,7 +25,7 @@ export default function Chat(){
         const fetchChatData = async () => {
             try {
                 setLoading(true);
-                const result = await fetch('http://localhost:12343/getChat', {
+                const result = await fetch('https://chat-backend-nine-zeta.vercel.app/getChat', {
                     credentials: 'include'
                 })                
                 if (!result.ok) {
@@ -77,7 +77,7 @@ export default function Chat(){
                 text: newMessage.trim()
             }
 
-            const response = await fetch('http://localhost:12343/sendMessage', {
+            const response = await fetch('https://chat-backend-nine-zeta.vercel.app/sendMessage', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -120,7 +120,7 @@ export default function Chat(){
 
     const handleLogout = useCallback(async () => {
         try {
-            const result = await fetch('http://localhost:12343/logout', {
+            const result = await fetch('https://chat-backend-nine-zeta.vercel.app/logout', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
