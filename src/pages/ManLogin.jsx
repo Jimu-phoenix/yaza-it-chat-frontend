@@ -40,12 +40,12 @@ const handleSubmit = async (e) => {
     let fname = e.target.firstname.value;
     let pword = e.target.password.value
 
-    const success = await postLog(fname, pword); // Wait for login to complete
+    const success = await postLog(fname, pword); 
     if(success){
-        // Add a small delay to ensure cookie is set
+        
         setTimeout(() => {
             navigate('/chat');
-        }, 1000);
+        }, 2500);
     }
 }
 
